@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}
+    به اشتراک گذاری
+{% endblock %}
+{% block content %}
+    <div class="card-body">
+        {% if sent %}
+            <div class="alert alert-success" role="alert">
+                <h1 class="m-3">ایمیل با موفقیت فرستاده شد</h1>
+                <P>"{{ post.title }} با موفقیت به{{ form.cleaned_data.گیرنده }} ارسال شد "</P>
+            </div>
+        {% else %}
+            <h1 class="m-3 p-3"> به اشتراک گذاری {{ post.title }} با ایمیل </h1>
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input class="btn btn-info" type="submit" value="ارسال پست">
+            </form>
+
+        {% endif %}
+    </div>
+{% endblock %}

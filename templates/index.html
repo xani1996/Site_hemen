@@ -1,0 +1,421 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Travel</title>
+    <!--stylesheet-->
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css">
+    <link rel="stylesheet" href="{% static 'styles/fontawesome/all.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="{% static 'styles/styles.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'styles/custom-responsive-styles.css' %}" rel="stylesheet" type="text/css">
+    <!--scripts-->
+    <script src="https://kit.fontawesome.com/5c5a8a99dd.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'scripts/jquery-3.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'scripts/all-plugins.js' %}"></script>
+    <script type="text/javascript" src="{% static 'scripts/plugins-activate.js' %}"></script>
+</head>
+
+<body id="page-top">
+<!-- Navigation -->
+<div class="logo">
+    <i class="fa fa-smile" aria-hidden="true"><span>مشاوره باما</span></i>
+</div>
+<a class="menu-toggle rounded" href="#">
+    <i class="fa fa-bars"></i>
+</a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a class="smooth-scroll" href="#Header">خوش آمدید</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="smooth-scroll" href="#page-top">صفحه اصلی</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="smooth-scroll" href="#About">درباره من</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="smooth-scroll" href="#Services">خدمات</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="smooth-scroll" href="{% url 'blog:post_list' %}">مقالات</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="smooth-scroll" href="#Testimonials">تراپی</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="smooth-scroll" href="#Contact">ارتباط بامن</a>
+        </li>
+    </ul>
+</nav>
+<!-- Header Starts -->
+<section id="Banner" class="content-section animate__animated animate__backInUp">
+    <div class="container content-wrap text-center">
+        <h1 class="animate__animated animate__backInDown animate__delay-1s">مشاوره باما</h1>
+        <h3>
+            <em>سلام به مشاوره باما خوش آمدید</em>
+        </h3>
+        <a class="btn btn-primary btn-xl smooth-scroll" href="#About">توضیحات بیشتر</a>
+    </div>
+    <div class="overlay"></div>
+</section>
+<!-- Header Ends -->
+<!-- About Us Starts -->
+<section id="About" class="content-section">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="block-heading">
+                    <h2><a href="{% url 'blog:post_list' %}">درباره من </a></h2>
+                </div>
+                <p class="lead">
+                    سلا من میسم رشیدی هستم |کارشناس ارشد
+                    مشاورخانواده،زوج درمانگر
+                    عضو سازمان نظام روانشناسی و مشاوره
+                    شماره عضویت:۳۶۵۵۳
+                    <br>
+                    من مدرک کارشناسی خود را در دانشگاه رازی کرمانشاه کسب کرده ام و در دوران کارشناسی خود افتخارات
+                    همچون
+                    دانشجوی برتر کشوری ، پژوهشگر برتر کشوری را در کارنامه تحصیل خود دارم.
+                    مدرک کارشناسی ارشد خود با سهمیه معدل بالا به طور پیوسته در دانشگاه سنندج اخذ کردم. در حال حاضر
+                    در
+                    تهران به صورت خصوصی در کلینیک های مختلفی مشغول به کار هستم، چندین ساعت سابقه درمان و تراپی را
+                    دارم
+                    و دارای رضایت بالای مراجعینم از نوع و نحوه ی درمان را در سابقه کاری خود دارم
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Us Starts -->
+<section id="Services" class="content-section text-center">
+    <div class="container">
+        <div class="block-heading">
+            <h2>خدمات و تراپی هایی که انجام میدم </h2>
+            <p>زوج درمانگر،مشاور خانواده،اضطراب و افسردگی،مشکلات جنسی</p>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="service-box">
+                    <div class="service-icon yellow">
+                        <div class="front-content">
+                            <i class="fa fa-people-arrows" aria-hidden="true"></i>
+                            <h3>زوج درمانی</h3>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>زوج درمانی</h3>
+                        <p>رویکرد زوج درمانی با هدف یکپارچه سازی و تنظیم هیجان، ابراز روشن احساسات و تایید
+                            متقابل در یک طرح جامع به منظور بهبود روابط زوجین همیشه پیش قدم بوده است. زوج درمانی
+                            رویکردی
+                            بدون قضاوت دارد و به پذیرش شما و همسرتان کمک می‌کند. یعنی رویکردی ست در قالب نحوه اندیشه
+                            شما
+                            درباره خودتان و همسرتان و خودسنجی بیشتر.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-box">
+                    <div class="service-icon orange">
+                        <div class="front-content">
+                            <i class="fa fa-sad-tear"></i>
+                            <h3>افسردگی</h3>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>افسردگی</h3>
+                        <p>افسردگی به حالت خُلقی گفته می‌شود که در آن شخص احساس ناراحتی و بی‌علاقه‌گی ممتد و همیشگی
+                            داشته باشد. البته ناراحتی و بی‌علاقه‌گی به صورت کلی یکی از احساسات عادی و طبیعی در همه
+                            ما
+                            آدم ها است. این احساسات می‌تواند به دلایل مختلفی برانگیخته شود. اما اگر این برانگیختگی
+                            تبدیل
+                            به عادت همیشگی و حس غالب در شخص شود، به آن افسردگی گفته می‌شود</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-box ">
+                    <div class="service-icon red">
+                        <div class="front-content">
+                            <i class="fa fa-face-dizzy" aria-hidden="true"></i>
+                            <h3>اضطراب</h3>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>اضطراب</h3>
+                        <p>
+                            اضطراب احساس ناخوشی، نگرانی یا تنشی است که شما در پاسخ به شرایط تهدید کننده یا فشارزا ارائه
+                            می دهید . توجه به این نکته لازم است که برخی از افراد بیش از دیگران مضطرب اند .
+                            اضطراب می تواند خفیف یا چنان شدید باشد که شما را به هراس افکند . به طور طبیعی اضطراب گذراست،
+                            ولی هر گاه مدت زمان طولانی دوام یابد یا در غیاب فشار روانی یا تهدید روی دهد، آنگاه باید
+                            بیماری تلقی شود .
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-box">
+                    <div class="service-icon grey">
+                        <div class="front-content">
+                            <i class="fa fa-genderless"></i>
+                            <h3>مشکلات جنسی</h3>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>مشکلات جنسی</h3>
+                        <p>سیاری از مشکلات و همچنین جدایی های بین زن و مرد به دلیل ناتوانی و مشکلات جنسی است. گاهی اوقات
+                            این مشکلات از طرف زن بوده و گاهی نیز مردان عامل بروز این مشکلات هستند. اختلالات جنسی در
+                            مردان طیف بسیار وسیعی دارد و از شایع ترین آنها می توان به اختلال در نعوظ ، اختلال در میل
+                            جنسی و اختلال در انزال اشاره کرد.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{#<section class="content-section text-center" id="Portfolio">#}
+{#    <div class="container">#}
+{#        <div class="block-heading">#}
+{#            <h2>Portfolio</h2>#}
+{#            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>#}
+{#        </div>#}
+{#        <div class="portfolio-wrapper clearfix">#}
+{#            <a class="each-portfolio" data-fancybox="gallery" href="images/p-two.jpeg">#}
+{#                <div class="content hover-cont-wrap">#}
+{#                    <div class="content-overlay"></div>#}
+{#                    <img class="content-image" src="images/p-two.jpeg">#}
+{#                    <div class="content-details fadeIn-bottom">#}
+{#                        <h5 class="p-title">Title</h5>#}
+{#                        <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>#}
+{#                        <span class="zoom"><i class="fa fa-search-plus"></i></span>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </a>#}
+{#            <a class="each-portfolio" data-fancybox="gallery" href="images/p-three.jpeg">#}
+{#                <div class="content hover-cont-wrap">#}
+{#                    <div class="content-overlay"></div>#}
+{#                    <img class="content-image" src="images/p-three.jpeg">#}
+{#                    <div class="content-details fadeIn-bottom">#}
+{#                        <h5 class="p-title">Title</h5>#}
+{#                        <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>#}
+{#                        <span class="zoom"><i class="fa fa-search-plus"></i></span>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </a>#}
+{#            <a class="each-portfolio" data-fancybox="gallery" href="images/p-four.jpeg">#}
+{#                <div class="content hover-cont-wrap">#}
+{#                    <div class="content-overlay"></div>#}
+{#                    <img class="content-image" src="images/p-four.jpeg">#}
+{#                    <div class="content-details fadeIn-bottom">#}
+{#                        <h5 class="p-title">Title</h5>#}
+{#                        <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>#}
+{#                        <span class="zoom"><i class="fa fa-search-plus"></i></span>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </a>#}
+{#            <a class="each-portfolio" data-fancybox="gallery" href="images/p-five.jpeg">#}
+{#                <div class="content hover-cont-wrap">#}
+{#                    <div class="content-overlay"></div>#}
+{#                    <img class="content-image" src="images/p-five.jpeg">#}
+{#                    <div class="content-details fadeIn-bottom">#}
+{#                        <h5 class="p-title">Title</h5>#}
+{#                        <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>#}
+{#                        <span class="zoom"><i class="fa fa-search-plus"></i></span>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </a>#}
+{#            <a class="each-portfolio" data-fancybox="gallery" href="images/p-six.jpeg">#}
+{#                <div class="content hover-cont-wrap">#}
+{#                    <div class="content-overlay"></div>#}
+{#                    <img class="content-image" src="images/p-six.jpeg">#}
+{#                    <div class="content-details fadeIn-bottom">#}
+{#                        <h5 class="p-title">Title</h5>#}
+{#                        <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>#}
+{#                        <span class="zoom"><i class="fa fa-search-plus"></i></span>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </a>#}
+{#            <a class="each-portfolio" data-fancybox="gallery" href="images/p-three.jpeg">#}
+{#                <div class="content hover-cont-wrap">#}
+{#                    <div class="content-overlay"></div>#}
+{#                    <img class="content-image" src="images/p-three.jpeg">#}
+{#                    <div class="content-details fadeIn-bottom">#}
+{#                        <h5 class="p-title">Title</h5>#}
+{#                        <p class="p-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>#}
+{#                        <span class="zoom"><i class="fa fa-search-plus"></i></span>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </a>#}
+{#        </div>#}
+{#    </div>#}
+{#</section>#}
+<!-- TESTIMONIALS -->
+<section id="Testimonials" class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="block-heading">
+                    <h2>پست های اینستاگرام من </h2>
+                    <p>به صفحات فضای مجازی ما سر بزنید</p>
+                </div>
+                <div id="customers-testimonials" class="owl-carousel">
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-circle" src="https://www.instagram.com/p/CifsQyojp2j/" alt="">
+                            <p><a href="https://www.instagram.com/p/CifsQyojp2j/?utm_source=ig_web_copy_link">post</a>
+                            </p>
+                        </div>
+                        <div class="testimonial-name">Sarah Jenks</div>
+                    </div>
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-circle" src="images/tangelia.jpg" alt="">
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                        </div>
+                        <div class="testimonial-name">Tangelia Ekhoff</div>
+                    </div>
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-circle" src="images/john-doe.jpg" alt="">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, or randomised words which don't
+                                look even slightly believable. </p>
+                        </div>
+                        <div class="testimonial-name">John Doe</div>
+                    </div>
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-circle" src="images/amy.jpg" alt="">
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                                necessary, making this the first true generator on the Internet. It uses a dictionary of
+                                over 200 Latin words</p>
+                        </div>
+                        <div class="testimonial-name">Amy Tan</div>
+                    </div>
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-circle" src="images/daniel.jpg" alt="">
+                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                                default model text, and a search for 'lorem ipsum' will uncover many web sites still in
+                                their infancy.</p>
+                        </div>
+                        <div class="testimonial-name">Daniel Felsted</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END OF TESTIMONIALS -->
+<section id="Contact" class="content-section">
+    <div class="container">
+        <div class="block-heading">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="contact-wrapper">
+                    <div class="address-block border-bottom">
+                        <h3 class="add-title">Headquaters</h3>
+                        <div class="c-detail">
+                            <span class="c-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span
+                                class="c-info">&nbsp;35 Street - Cheyenne, CO 80810</span>
+                        </div>
+                        <div class="c-detail">
+                            <span class="c-icon"><i class="fa fa-phone" aria-hidden="true"></i></span><span
+                                class="c-info">+123 4567 898</span>
+                        </div>
+                        <div class="c-detail">
+                            <span class="c-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span><span
+                                class="c-info">email@yourdomain.com</span>
+                        </div>
+                    </div>
+                    <div class="address-block">
+                        <h3 class="add-title">Branch</h3>
+                        <div class="c-detail">
+                            <span class="c-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span
+                                class="c-info">&nbsp;98 Berry - Cheyenne, CO 80810</span>
+                        </div>
+                        <div class="c-detail">
+                            <span class="c-icon"><i class="fa fa-phone" aria-hidden="true"></i></span><span
+                                class="c-info">+123 4567 8987</span>
+                        </div>
+                        <div class="c-detail">
+                            <span class="c-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span><span
+                                class="c-info">email@yourdomain.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="form-wrap">
+                    <form action="" method="post">
+                        <div class="fname floating-label">
+                            <label for="title">
+                                <input type="text" class="floating-input" name="full name"/>
+                                First Name</label>
+                        </div>
+                        <div class="fname floating-label">
+                            <input type="text" class="floating-input" name="full name"/>
+                            <label for="title">Last Name</label>
+                        </div>
+                        <div class="email floating-label">
+                            <input type="email" class="floating-input" name="email"/>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="contact floating-label">
+                            <input type="tel" class="floating-input" name="contact"/>
+                            <label for="email">Mobile</label>
+                        </div>
+                        <div class="company floating-label">
+                            <textarea type="text" class="floating-input" name="company"/></textarea>
+                            <label for="email">Message</label>
+                        </div>
+                        <div class="submit-btn">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer text-center">
+    <div class="container">
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="javascript:void(0)">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="text-muted small mb-0">Copyright © Your Website 2018</p>
+        <p class="text-muted small mb-0">Designed by <a href="https://www.position2.com/" target="_balnk">Position2 </a>
+        </p>
+    </div>
+</footer>
+</body>
+
+</html>

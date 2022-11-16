@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+    اضافه کردن نظر به پست
+{% endblock %}
+{% block content %}
+    {% if comment %}
+        <h2>نظر شما با موفقیت ثبت شد</h2>
+        <p><a href="{{ post.get_absolute_url }}">برگشت به صفحه مقاله</a></p>
+    {% else %}
+        {% include 'comment_form.html' %}
+    {% endif %}
+{% endblock %}

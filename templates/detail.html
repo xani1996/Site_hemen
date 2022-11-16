@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+{% block content %}
+    <h1>{{ post.title }}</h1>
+    <p>published {{ post.publish }} by {{ post.author }}</p>
+    {{ post.body|linebreaks }}
+    <p>
+        <a href="{% url 'blog:post_share' post.id %}">به اشتراک گذاشتن</a>
+    </p>
+    {% with comments.count as total_comments %}
+        <h2>{{ total_comments }} نظرها{{ total_comments|pluralize }}</h2>
+    {% endwith %}
+    {% for comment in comments %}
+        <div class="comments">
+        <p>
+            comments {{ forloop.counter }} by {{ comment.name }}
+            {{ comment.created }}
+        </p>
+        {{ comment.body|linebreaks }}
+
+        </div>
+    {% empty %}
+        <p>نظر جدیدی وجود ندارد</p>
+    {% endfor %}
+    {% include 'comment_form.html' %}
+{% endblock %}
