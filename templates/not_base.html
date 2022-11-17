@@ -1,0 +1,29 @@
+{% load blog-tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'articles/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'articles/css/style.css' %}">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+<div class="container card p-3 mt-5 text-right">
+    <div class="row">
+        <div class="col">
+            {% block content %}
+
+            {% endblock content %}
+        </div>
+
+    </div>
+</div>
+    <p>من در مجموع {% total_post %}پست نوشتم</p>
+<h3>latest posts</h3>
+{% show_latest_posts 3 %}
+</body>
+</html>

@@ -10,7 +10,7 @@ from taggit.models import Tag
 
 # Create your views here.
 def home_view(request):
-    return render(request, 'index.html')
+    return render(request, 'home/index.html')
 
 
 def post_list(request, tag_slug=None):

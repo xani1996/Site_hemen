@@ -1,9 +1,9 @@
 (function($jq) {
   $jq(document).ready(function() {
-    // Closes the sidebar menu
+    // Closes the articles menu
     $jq(".menu-toggle").click(function(e) {
       e.preventDefault();
-      $jq("#sidebar-wrapper").toggleClass("active");
+      $jq("#articles-wrapper").toggleClass("active");
       $jq(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
       $jq(this).toggleClass("active");
     });
@@ -13,14 +13,14 @@
       var dis = $jq(this),
         target = dis.attr("href"),
         offset = parseInt($jq(target).offset().top),
-        header = $jq(".sidebar-nav");
+        header = $jq(".articles-nav");
       dis.addClass("active").parent().siblings().find(".smooth-scroll").removeClass("active");
       $jq('html,body').stop().animate({ scrollTop: offset }, 200);
       $jq(".menu-toggle").trigger("click");
     });
     // Closes responsive menu when a scroll trigger link is clicked
-    $jq('#sidebar-wrapper .js-scroll-trigger').click(function() {
-      $jq("#sidebar-wrapper").removeClass("active");
+    $jq('#articles-wrapper .js-scroll-trigger').click(function() {
+      $jq("#articles-wrapper").removeClass("active");
       $jq(".menu-toggle").removeClass("active");
       $jq(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
     });
